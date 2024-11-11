@@ -343,11 +343,19 @@ L'application sera accessible à l'adresse <http://localhost:3000>
 
 ## Lien vers le Dépôt GitHub
 
-<https://github.com/KevinCaris/EcoShop>
+<https://github.com/kevinCaris/Eco-Shop>
+
+## Lien vers Conception et prototypage
+
+???
+
+## Lien vers EcoShop l'application déployée
+
+<https://eco-shop-benin.vercel.app>
 
 ## Tableau de Gestion des Tâches
 
-Accéder au tableau Trello (remplacez ce texte par le lien vers votre tableau de gestion des tâches).
+<https://trello.com/b/JjPPwf82/projet-ecoshop>
 
 ## Auteurs
 
