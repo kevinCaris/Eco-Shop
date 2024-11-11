@@ -4,7 +4,7 @@ import { Link, NavLink } from 'react-router-dom';
 import { useCart } from './CartContext';
 
 const Header = () => {
-    // const { compterArticles } = useCart();
+    const { compterArticles } = useCart();
     return (
         <header className='header'>
             <nav-top nav>
@@ -35,8 +35,14 @@ const Header = () => {
 
                 <div className="icone me-4">
                     <Link to="/cart" className="panier">
+                        {/* Utilisez ici une icône de type "contour" */}
                             <i className="fas fa-shopping-cart" style={{ fontSize: '1.1em' }}></i>
-                    </Link>
+                                    {compterArticles() > 0 && (
+                            <span className="position-absolute top-10 start-12 translate-middle badge rounded-pill bg-danger">
+                                {compterArticles()}
+                            </span>
+                        )}
+                        </Link>
                 </div>
             </div>
         </nav>
