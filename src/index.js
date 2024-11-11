@@ -8,8 +8,6 @@ import '@fortawesome/fontawesome-free/css/all.min.css';
 import { CartProvider } from './Components/CartContext';
 
 
-
-
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
     <CartProvider>

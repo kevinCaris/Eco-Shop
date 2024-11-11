@@ -3,6 +3,7 @@ import { useNavigate, useParams } from 'react-router-dom';  // To obtain the pro
 import axios from 'axios';
 import { Spinner, Tab, Tabs } from 'react-bootstrap';// Using the spinner for loading
 import { useCart } from '../Components/CartContext';
+import { Helmet } from 'react-helmet-async';
 
 const ProductDetail = () => {
    const { ajouterAuPanier } = useCart();
@@ -48,6 +49,16 @@ const ProductDetail = () => {
 
   return (
     <div className="container product-detail mt-8">
+      <Helmet>
+        <title>{produit.title} - Détails produit</title>
+        <meta name="description" content={produit.description} />
+        <meta name="keywords" content={produit.category} />
+        <meta property="og:title" content={produit.title} />
+        <meta property="og:description" content={produit.description} />
+        <meta property="og:image" content={produit.image} />
+        <meta property="og:type" content="product" />
+        <meta property="og:url" content={window.location.href} />
+      </Helmet>
       <div className="row">
         {/* Section for product image */}
         <div className="col-md-6">
