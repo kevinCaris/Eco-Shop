@@ -1,3 +1,4 @@
+import { HelmetProvider } from 'react-helmet-async';
 import './App.css';
 import AppRouter from './AppRouter';
 
@@ -5,7 +6,10 @@ import AppRouter from './AppRouter';
 function App() {
   return (
     <div className="App">
-      <AppRouter />
+      <HelmetProvider>
+
+          <AppRouter />
+      </HelmetProvider>
     </div>
   );
 }

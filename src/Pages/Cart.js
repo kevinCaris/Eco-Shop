@@ -1,11 +1,21 @@
 import React from 'react';
 import { useCart } from '../Components/CartContext';
+import MetaTags from '../Components/MetaTags';
 
 const Cart = () => {
+
+  const pageTitle = 'Panier - EcoShop';
+  const pageDescription = 'Vérifiez les articles dans votre panier et finalisez votre commande sur EcoShop.';
+  const pageAuthor = 'EcoShop'; // Le nom de la boutique ou de l'auteur
   const { cartItems, mettreAJourQuantité, supprimerDuPanier, calculerTotal } = useCart();
 
   return (
-      <div className="container py-5">
+    <div className="container py-5">
+           <MetaTags
+        title={pageTitle}
+        description={pageDescription}
+        name={pageAuthor}
+      />
          <div className='shop-hero'>
             <h2 className="mb-4 fw-bold">Shopping Cart Items</h2>
          </div>
