@@ -6,6 +6,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import { CartProvider } from './Components/CartContext';
+import PageNotification from './Components/PageNotification';
 
 
 
@@ -13,8 +14,9 @@ import { CartProvider } from './Components/CartContext';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
     <CartProvider>
+        <PageNotification/>
         <App />
-    </CartProvider>
+  </CartProvider>
 );
 
 // If you want to start measuring performance in your app, pass a function
