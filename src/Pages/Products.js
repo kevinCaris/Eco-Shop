@@ -3,6 +3,7 @@ import SearchBar from '../Components/SearchBar';
 import ProductList from '../Components/ProductList';
 import axios from 'axios';
 import { Pagination, Spinner } from 'react-bootstrap';
+import MetaTags from '../Components/MetaTags';
 
 const Products = () => {
   const [recherche, setRecherche] = useState('');
@@ -68,6 +69,12 @@ const Products = () => {
   const currentProducts = produitsTries.slice(indexOfFirstProduct, indexOfLastProduct);
   return (
     <div className="shop-container container mt-4">
+       <MetaTags
+        title="Shop - EcoShop"
+        description="Explore our wide range of products at affordable prices. Shop now and enjoy fast delivery and secure payment options."
+        image="https://example.com/your-image.jpg" // Remplacez par l'URL de l'image que vous souhaitez afficher
+        name="EcoShop Team"
+      />
       {/* Row for SearchBar and Sort */}
       <div className="row mb-4">
         {/* SearchBar */}

@@ -1,10 +1,16 @@
 import React from 'react';
 import Products from './Products';
+import MetaTags from '../Components/MetaTags';
 
 const Shop = () => {
 
   return (
     <div className="shop-container container-fluide mt-4">
+       <MetaTags
+        title="Shop - EcoShop"
+        description="Explore our wide range of products at affordable prices. Shop now and enjoy fast delivery and secure payment options."
+        name="EcoShop Team"
+      />
       <div className="features ">
         <div className="feature">
           <i className="feature-icon fas fa-truck"></i>

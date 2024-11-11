@@ -3,6 +3,7 @@ import {  Col, Container, Nav, Row } from 'react-bootstrap';
 import ProductFetcher from '../Components/ProductFetcher';
 import TestimonialsSection from '../Components/TestimonialsSection';
 import { Link } from 'react-router-dom';
+import MetaTags from '../Components/MetaTags';
 
 const testimonials = [
   {
@@ -24,10 +25,23 @@ const testimonials = [
   text: 'Très satisfaite de mes achats. Les articles correspondent parfaitement à la description et la livraison a été plus rapide que prévu!'
 }
 ];
+
+  const pageTitle = 'MEILLEUR DISPENSAIRE POUR ACHETER ECO EN LIGNE';
+  const pageDescription = 'Eco & Bio. Découvrez notre boutique en ligne offrant des produits écologiques et bio de haute qualité.';
+  const pageImage = '/images/hero-image.jpg'; // Remplacez par l'image que vous souhaitez utiliser pour la page d'accueil
+  const pageAuthor = 'EcoShop'; // Le nom de la boutique ou de l'auteur
+
 const Home = () => {
 
     return (
-         <Container fluid  className="home">
+      <Container fluid className="home">
+              {/* Utilisation de MetaTags pour SEO et Open Graph */}
+            <MetaTags
+              title={pageTitle}
+              description={pageDescription}
+              image={pageImage}
+              name={pageAuthor}
+            />
             <div className="hero-content">
               <h2 className="hero-subtitle">MEILLEUR BOUTIQUE</h2>
               <h1 className="hero-title">MEILLEUR DISPENSAIRE POUR ACHETER ECO EN LIGNE</h1>
