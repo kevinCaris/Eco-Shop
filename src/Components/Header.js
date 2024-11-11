@@ -21,7 +21,17 @@ const Header = () => {
                     <i className="fas fa-search" style={{ fontSize: '1.1em' }}></i>
                 </a>
             </div>
-
+            <div className='d-lg-none d-block '>
+                <Link to="/cart" className="panier">
+                        {/* Utilisez ici une icône de type "contour" */}
+                            <i className="fas fa-shopping-cart" style={{ fontSize: '1.1em' }}></i>
+                                    {compterArticles() > 0 && (
+                            <span className="position-absolute top-10 start-12 translate-middle badge rounded-pill bg-danger">
+                                {compterArticles()}
+                            </span>
+                        )}
+                    </Link>
+            </div>
             <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span className="navbar-toggler-icon navbar-toggler-icon-white"></span>
             </button>

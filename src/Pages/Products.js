@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
-import SearchBar from '../Components/SearchBar';
 import ProductList from '../Components/ProductList';
 import axios from 'axios';
 import { Pagination, Spinner } from 'react-bootstrap';
+import SearchBar from '../Components/SearchBar';
 
 const Products = () => {
   const [recherche, setRecherche] = useState('');

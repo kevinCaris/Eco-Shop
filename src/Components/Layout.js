@@ -7,7 +7,7 @@ const Layout = ({ children }) => {
   return (
     <div>
       <Header />
-      {/* <PageNotification /> Notification affichée ici */}
+      <PageNotification />
       <main>{children}</main>  {/* Main content to display other pages */}
       <Footer />
     </div>

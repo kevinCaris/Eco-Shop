@@ -6,7 +6,6 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import { CartProvider } from './Components/CartContext';
-import PageNotification from './Components/PageNotification';
 
 
 
@@ -14,7 +13,6 @@ import PageNotification from './Components/PageNotification';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
     <CartProvider>
-        <PageNotification/>
         <App />
   </CartProvider>
 );
