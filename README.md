@@ -347,7 +347,7 @@ L'application sera accessible à l'adresse <http://localhost:3000>
 
 ## Lien vers Conception et prototypage
 
-???
+https://www.figma.com/design/s6MnqGvfZRtVQvWQWDiBRA/Ecoshop?node-id=0-1&t=UpY0muyuhBAUlB4V-1
 
 ## Lien vers EcoShop l'application déployée
 
